@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.0.0/journal/bootstrap.min.css" />
+    <title>React Reading List</title>
+</head>
+
+<body>
+    <noscript>
+        You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    <div class="container-fluid">
+        <form>
+            <div class="form-inline">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email Address:</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Enter email"  style="margin-top: 2%">
+                </div>
+            </div>
+            <div class="form-inline">
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password:</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"  style="margin-top: 2%">
+                </div>
+            </div>
+            <div class="form-inline">
+                <div class="form-group">
+                    <label for="exampleInputPassword2">Re-Type Password:</label>
+                    <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password"  style="margin-top: 2%">
+                </div>
+            </div>
+            <div class="form-inline">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Name"  style="margin-top: 2%">
+                </div>
+            </div>
+            <div class="form-inline">
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Which sport do you play?</label>
+                    <select class="form-control" id="exampleFormControlSelect1"  style="margin-top: 2%">
+                        <option value=1>Men's Volleyball</option>
+                        <option value=2>Men's Basketball</option>
+                        <option value=3>Men's Baseball</option>
+                        <option value=4>Football</option>
+                        <option value=5>Women's Volleyball</option>
+                        <option value=6>Women's Basketball</option>
+                        <option value=7>Women's Track & Field</option>
+                        <option value=8>Women's Softball</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-inline">
+                <div class="form-group">
+                    <label for="position">Position:</label>
+                    <input type="text" class="form-control" id="position" placeholder="Position"  style="margin-top: 2%">
+                </div>
+            </div>
+            <div class="form-inline">
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" class="form-control" id="age" placeholder="Age" style="margin-top: 2%">
+                </div>
+            </div>
+            <div class="form-inline">
+                <div class="form-group">
+                    <label for="heightFeet heightInches"">Height:</label>
+                    <input type=" number" class="form-control" id="heightFeet" placeholder="Feet"
+                        style="margin-top: 2%"> ft.
+                        <input type="number" class="form-control" id="heightInches" placeholder="Inches"
+                            style="margin-top: 2%" style="margin-left: 5px"> in.
+                </div>
+            </div>
+            <div class="form-inline">
+                <div class="form-group">
+                    <label for="weight">Weight:</label>
+                    <input type="number" class="form-control" id="weight" placeholder="Weight" style="margin-top: 2%">
+                    lbs.
+                </div>
+            </div>
+            <div class="form-inline">
+                <div class="form-group">
+                    <label for="highSchool">High School:</label>
+                    <input type="text" class="form-control" id="highSchool" placeholder="High School"
+                        style="margin-top: 2%">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="aboutMe">About Me:</label>
+                <textarea class="form-control" id="aboutMe" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="playingLink">Link to a Video of You Playing Your Sport:</label>
+                <input type="text" class="form-control" id="playingLink" placeholder="Link">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
