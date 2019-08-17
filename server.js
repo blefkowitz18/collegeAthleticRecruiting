@@ -4,16 +4,17 @@ var express = require("express");
 var db = require("./models");
 
 var app = express();
-var PORT = process.env.PORT || 3000;
+var PORT = process.env.PORT || 3001;
 
 // Middleware
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-app.use(express.static("public"));
+app.use(express.static("client/build"));
+app.use(express.static("client/public"));
 
 // Routes
-// require("./routes/htmlRoutes")(app);
-// require("./routes/scenario-api-routes")(app);
+require("./routes/htmlRoutes")(app);
+require("./routes/new-athlete-routes")(app);
 // require("./routes/plans-api-routes")(app);
 
 var syncOptions = { force: false };

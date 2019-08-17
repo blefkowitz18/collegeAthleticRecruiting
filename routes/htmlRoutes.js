@@ -3,7 +3,7 @@ var path = require("path");
 module.exports = function(app) {
   // Load index page
   app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "../client/public/index.html"));
+    res.sendFile(path.join(__dirname, "../client/build/index.html"));
   });
 
   // Load example page and pass in an example by id
@@ -30,6 +30,10 @@ module.exports = function(app) {
   app.get("/mensvolleyball", function(req, res) {
     res.sendFile(path.join(__dirname, "../client/public/mensVolleyball.html"));
   });
+  app.use(function(req, res){
+    res.sendFile(path.join(__dirname, "../client/build/index.html")); 
+  })
+ 
 
   // app.get("/scenario", function(req, res) {
   //   res.sendFile(path.join(__dirname, "../public/scenario.html/:id"));
