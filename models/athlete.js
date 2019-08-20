@@ -63,8 +63,8 @@ module.exports = function(sequelize, DataTypes) {
         allowNull: false
       }
     });
-    Athletes.associate = function(models) {
-        Athletes.belongsTo(models.Recruiter, {});
-    };
+    // Athletes.associate = function(models) {
+    //     Athletes.belongsTo(models.Recruiter, {});
+    // };
     return Athletes;
   };

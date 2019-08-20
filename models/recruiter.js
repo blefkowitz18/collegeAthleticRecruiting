@@ -1,6 +1,6 @@
 /* eslint-disable camelcase */
 module.exports = function(sequelize, DataTypes) {
-    var Recruiters = sequelize.define("Recruiter", {
+    var Recruiters = sequelize.define("Recruiters", {
       id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
@@ -26,13 +26,17 @@ module.exports = function(sequelize, DataTypes) {
         type: DataTypes.STRING,
         len: [2, 50],
         allowNull: false
+      },
+      logged_in: {
+        type: Boolean,
+        default: false
       }
     });
-    Recruiters.associate = function(models) {
-      Recruiters.hasMany(models.Athletes, {
-        onDelete: "cascade"
-      });
-    };
+    // Recruiters.associate = function(models) {
+    //   Recruiters.hasMany(models.Athletes, {
+    //     onDelete: "cascade"
+    //   });
+    // };
     return Recruiters;
   };
   

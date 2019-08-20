@@ -14,8 +14,8 @@ app.use(express.static("client/public"));
 
 // Routes
 require("./routes/htmlRoutes")(app);
-require("./routes/new-athlete-routes")(app);
-// require("./routes/plans-api-routes")(app);
+require("./routes/newAthleteRoutes")(app);
+require("./routes/newRecruiterRoutes")(app);
 
 var syncOptions = { force: false };
 

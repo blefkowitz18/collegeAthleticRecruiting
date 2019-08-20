@@ -56,14 +56,14 @@ $(function() {
             .val()
             .trim()
         };    
-      }
+      };
       console.log(newAthlete);
   
       $.ajax("/api/athlete", {
         type: "POST",
         data: newAthlete
       }).then(function() {
-        console.log("new athlete created");
+        // console.log("new athlete created");
         $("#athleteEmail").val("");
         $("#athletePassword").val("");
         $("#athletePasswordTwo").val("");
