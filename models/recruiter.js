@@ -26,10 +26,10 @@ module.exports = function(sequelize, DataTypes) {
         type: DataTypes.STRING,
         len: [2, 50],
         allowNull: false
-      },
-      logged_in: {
-        type: Boolean,
-        default: false
+      // },
+      // logged_in: {
+      //   type: Boolean,
+      //   default: false
       }
     });
     // Recruiters.associate = function(models) {
