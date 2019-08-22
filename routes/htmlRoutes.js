@@ -8,7 +8,7 @@ module.exports = function(app) {
 
   // Load example page and pass in an example by id
   app.get("/myprofile", function(req, res) {
-    res.sendFile(path.join(__dirname, "../client/public/athleteProfile.html"));
+    res.sendFile(path.join(__dirname, "../client/public/athletesProfile.html"));
   });
 
   app.get("/createnewprofile", function(req, res) {

@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 
 function Nav() {
@@ -33,7 +34,7 @@ function Nav() {
             <a className="nav-link" href="/createnewprofile">Create a New Profile</a>
           </li>
           <li className="nav-link">
-            <a className="nav-link" href="/recruiterprofile">My Profile</a>
+            <a className="nav-link" href="/myprofile">My Profile</a>
           </li>
           <li className="nav-link">
             <a className="nav-link" href="/login">Login</a>

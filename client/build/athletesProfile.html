@@ -8,10 +8,13 @@
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
   <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.0.0/journal/bootstrap.min.css" />
+  <link rel="stylesheet" href="./styles/style.css">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <title>React Reading List</title>
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="./js/athleteProfile.js"></script>
+  <title>My Profile</title>
 </head>
 
 <body>
@@ -46,7 +49,7 @@
               <a class="nav-link" href="/createnewprofile">Create a New Profile</a>
             </li>
             <li class="nav-link">
-              <a class="nav-link" href="/recruiterprofile">My Profile</a>
+              <a class="nav-link" href="/myprofile">My Profile</a>
             </li>
             <li class="nav-link">
               <a class="nav-link" href="/login">Login</a>
@@ -55,27 +58,7 @@
         </nav>
       </div>
   <div class="container-fluid">
-    <h2>Welcome name</h2>
-    <div>
-      <div class="card mb-3">
-        <div class="card-body row">
-          <div class="col-6">
-            <h5 class="card-title">Player Name</h5>
-            <p class="card-text">Height:<span id="playerHeight"></span></p>
-            <p class="card-text">Weight:<span id="playerWeight"></span></p>
-            <p class="card-text">Position:<span id="playerPosition"></span></p>
-            <p class="card-text">About Me:<span id="playerAboutMe"></span></p>
-            <button type="button" class="btn btn-primary" id = "updateInformation">Update Information</button>
-          </div>
-          <div class = "col-6">
-              <button type="button" class="btn btn-primary" id = "addMore">Add More Videos or Photos</button>
-              <p>Picture</p>
-              <button type="button" class="btn btn-primary" id = "viewMore">View More Videos or Photos</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+</div>
 </body>
 
 </html>
