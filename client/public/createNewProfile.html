@@ -9,93 +9,103 @@
   <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.0.0/journal/bootstrap.min.css" />
   <link rel="stylesheet" href="./styles/style.css">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery.js"></script>
-  <script src="./js/createNewProfile.js"></script>
   <title>New Recruiter Profile</title>
 </head>
 
-<body class = "body">
-    <div>
-        <h1 class = "headline">College Athletics Recruiting</h1>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light nav">
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="/">Home <span class="sr-only"></span></a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href = "#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Sports
-              </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="/womensbasketball">Women's Basketball</a>
-                  <a class="dropdown-item" href="womensvolleyball">Women's Volleyball</a>
-                  <a class="dropdown-item" href="womenstrack">Women's Track and Field</a>
-                  <a class="dropdown-item" href="/womenssoftball">Women's Softball</a>
-                  <a class="dropdown-item" href="/football">Football</a>
-                  <a class="dropdown-item" href="/mensbasketball">Men's Basketball</a>
-                  <a class="dropdown-item" href="/mensbaseball">Men's Baseball</a>
-                  <a class="dropdown-item" href="/mensvolleyball">Men's Volleyball</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/newathlete">New Athletes</a>
-              </li>
-            </ul>
-            <!-- <li class="nav-link">
+<body class="body">
+  <div>
+    <h1 class="headline">College Athletics Recruiting</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light nav">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home <span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Sports
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/womensbasketball">Women's Basketball</a>
+              <a class="dropdown-item" href="womensvolleyball">Women's Volleyball</a>
+              <a class="dropdown-item" href="womenstrack">Women's Track and Field</a>
+              <a class="dropdown-item" href="/womenssoftball">Women's Softball</a>
+              <a class="dropdown-item" href="/football">Football</a>
+              <a class="dropdown-item" href="/mensbasketball">Men's Basketball</a>
+              <a class="dropdown-item" href="/mensbaseball">Men's Baseball</a>
+              <a class="dropdown-item" href="/mensvolleyball">Men's Volleyball</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/newathlete">New Athletes</a>
+          </li>
+        </ul>
+        <!-- <li class="nav-link">
               <a class="nav-link" href="/createnewprofile">Create a New Profile</a>
             </li> -->
-            <li class="nav-link">
-              <a class="nav-link" href="/myprofile">My Profile</a>
-            </li>
-            <li class="nav-link">
-              <a class="nav-link" href="/login">Login</a>
-            </li>
-          </div>
-        </nav>
+        <li class="nav-link">
+          <a class="nav-link" href="/myprofile">My Profile</a>
+        </li>
+        <li class="nav-link">
+          <a class="nav-link" href="/login">Login</a>
+        </li>
       </div>
+    </nav>
+  </div>
   <div class="container-fluid">
     <div>
-      <p>This is for college recruiters. If you are a potential college athlete, please click <a href="/newathlete">here</a></p>
+      <p>This is for college recruiters. If you are a potential college athlete, please click <a
+          href="/newathlete">here</a></p>
     </div>
-    <form class = "newRecruiter">
+    <form class="newRecruiter">
       <div class="form-inline">
         <div class="form-group">
           <label for="recruiterName">Name:</label>
           <input type="text" class="form-control" id="recruiterName" placeholder="Name" style="margin-top: 2%">
         </div>
       </div>
-      <div class = "form-inline">
-      <div class="form-group">
-        <label for="university">University:</label>
-        <input type="text" class="form-control" id="university" placeholder="University" style="margin-top: 2%">
+      <div class="form-inline">
+        <div class="form-group">
+          <label for="university">University:</label>
+          <input type="text" class="form-control" id="university" placeholder="University" style="margin-top: 2%">
+        </div>
       </div>
-    </div>
-    <div class = "form-inline">
-      <div class="form-group">
-        <label for="recruiterEmail">Email Address:</label>
-        <input type="email" class="form-control" id="recruiterEmail" aria-describedby="emailHelp"
-          placeholder="Enter email" style="margin-top: 2%">
+      <div class="form-inline">
+        <div class="form-group">
+          <label for="recruiterEmail">Email Address:</label>
+          <input type="email" class="form-control" id="recruiterEmail" aria-describedby="emailHelp"
+            placeholder="Enter email" style="margin-top: 2%">
+        </div>
       </div>
-    </div>
-    <div class = "form-inline">
-      <div class="form-group">
-        <label for="recruiterPassword">Password:</label>
-        <input type="password" class="form-control" id="recruiterPassword" placeholder="Password" style="margin-top: 2%">
+      <div class="form-inline">
+        <div class="form-group">
+          <label for="recruiterPassword">Password:</label>
+          <input type="password" class="form-control" id="recruiterPassword" placeholder="Password"
+            style="margin-top: 2%">
+        </div>
       </div>
-    </div>
-    <div class = "form-inline">
-      <div class="form-group">
-        <label for="recruiterPasswordTwo">Re-Type Password:</label>
-        <input type="password" class="form-control" id="RecruiterPasswordTwo" placeholder="Password" style="margin-top: 2%">
+      <div class="form-inline">
+        <div class="form-group">
+          <label for="recruiterPasswordTwo">Re-Type Password:</label>
+          <input type="password" class="form-control" id="RecruiterPasswordTwo" placeholder="Password"
+            style="margin-top: 2%">
+        </div>
       </div>
-    </div>
       <button type="submit" class="btn btn-primary" style="margin-top: 1%">Create Your Profile</button>
     </form>
   </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="./js/createnewprofile.js"></script>
 </body>
 
 </html>
