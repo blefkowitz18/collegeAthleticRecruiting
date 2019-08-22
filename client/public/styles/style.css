@@ -4,3 +4,69 @@
     width: 420px;
     src: ""
 }
+
+.body{
+    background-color: lightblue;
+}
+
+.nav{
+    background-color: lightblue !important;
+}
+
+.card{
+    background-color: lightgray !important;
+}
+
+.headline{
+    text-align: center !important;
+}
+
+.intro{
+    font-size: 20px;
+    text-align: center;
+}
+
+.introPicture{
+    width: 100%;
+    height: 100%
+}
+
+#updateButton{
+    background-color: lightblue;
+    color: lightgray;
+}
+
+#updateButton:hover{
+    color: black;
+    background-color: lightgray;
+}
+
+#newAthleteSubmit{
+    background-color: lightgray;
+    color: black !important;
+}
+
+#newAthleteSubmit:hover{
+    background-color: lightblue;
+}
+
+.nav-link{
+    color: darkred !important;
+}
+
+.nav-link:hover{
+    color: black !important;
+}
+
+#logInSubmit{
+    background-color: lightgray;
+    color: black;
+}
+
+#logInSubmit:hover{
+    background-color: lightblue;
+}
+
+.textBlack{
+    color: black !important;
+}

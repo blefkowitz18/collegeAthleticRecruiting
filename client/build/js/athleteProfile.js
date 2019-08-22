@@ -33,7 +33,7 @@ function createAthleteCard(athleteNameOne, athleteName, athleteHeightFeet, athle
         "<p> Position: " + athletePosition + "</p>" +
         "<p> About Me: " + athleteAboutMe + "</p>" +
         "<p> High School: " + athleteHighSchool + "</p>" +
-        "<button type = 'button' class='btn btn-primary' id='updateButton'> <a href='/updateAthleteProfile'> Update Your Information </a></button>" +
+        "<button type = 'button' class='btn btn-primary' id='updateButton'> <a href='/updateAthleteProfile' class='textBlack'> Update Your Information </a></button>" +
         "</div>" +
         "<div class = 'col-6'>" +
         "<iframe class='media' src=" + athleteMedia + "> </iframe>" +

@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 $(function() {
     $(".updateAthlete").on("submit", function(event) {
       event.preventDefault();

@@ -4,8 +4,8 @@ import React from "react";
 function Nav() {
   return (
     <div>
-      <h1>College Athletics Recruiting</h1>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <h1 className = "headline">College Athletics Recruiting</h1>
+      <nav className="navbar navbar-expand-lg navbar-light bg-light nav">
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">
             <li className="nav-item">
@@ -30,9 +30,9 @@ function Nav() {
               <a className="nav-link" href="/newathlete">New Athletes</a>
             </li>
           </ul>
-          <li className="nav-link">
+          {/* <li className="nav-link">
             <a className="nav-link" href="/createnewprofile">Create a New Profile</a>
-          </li>
+          </li> */}
           <li className="nav-link">
             <a className="nav-link" href="/myprofile">My Profile</a>
           </li>

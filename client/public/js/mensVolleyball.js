@@ -19,7 +19,7 @@ $(function () {
 function createAthleteCard(athleteName, athleteHeightFeet, athleteHeightInches, athleteWeight, athletePosition, athleteAboutMe, athleteHighSchool, athleteMedia) {
 
     var myCard = 
-    "<div class = 'card mb-3'>" +
+    "<div class = 'card mb-3 animated rotateInDownLeft'>" +
         "<div class='card-body row'>"+
             "<div class='col-6'>"+
                 "<h5> Name: " + athleteName + "</h5>" +

@@ -8,6 +8,7 @@
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
   <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.0.0/journal/bootstrap.min.css" />
+  <link rel="stylesheet" href="./styles/style.css">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
@@ -22,10 +23,10 @@
   <title>Login</title>
 </head>
 
-<body>
+<body class = "body">
   <div>
-    <h1>College Athletics Recruiting</h1>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <h1 class = "headline">College Athletics Recruiting</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light nav">
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
@@ -51,9 +52,9 @@
             <a class="nav-link" href="/newathlete">New Athletes</a>
           </li>
         </ul>
-        <li class="nav-link">
+        <!-- <li class="nav-link">
           <a class="nav-link" href="/createnewprofile">Create a New Profile</a>
-        </li>
+        </li> -->
         <li class="nav-link">
           <a class="nav-link" href="/myprofile">My Profile</a>
         </li>
@@ -74,7 +75,7 @@
         <label for="password">Password</label>
         <input type="password" class="form-control" id="password" placeholder="Password">
       </div>
-      <button type="submit" class="btn btn-primary"> <a href="/myprofile">Submit</a></button>
+      <button type="submit" class="btn btn-primary" id="logInSubmit"> <a href="/myprofile" class = "textBlack">Submit</a></button>
     </form>
   </div>
 </body>

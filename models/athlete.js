@@ -65,7 +65,6 @@ module.exports = function(sequelize, DataTypes) {
       logged_in:{
         type: DataTypes.BOOLEAN,
         default: false,
-        allowNull: false
       }
     });
     // Athletes.associate = function(models) {
