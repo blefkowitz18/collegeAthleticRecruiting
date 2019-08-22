@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.0.0/journal/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="./js/updateAthlete.js"></script>
+    <title>Update Athlete</title>
+</head>
+
+<body>
+    <div>
+        <h1>College Athletics Recruiting</h1>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sports
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/womensbasketball">Women's Basketball</a>
+                            <a class="dropdown-item" href="womensvolleyball">Women's Volleyball</a>
+                            <a class="dropdown-item" href="womenstrack">Women's Track and Field</a>
+                            <a class="dropdown-item" href="/womenssoftball">Women's Softball</a>
+                            <a class="dropdown-item" href="/football">Football</a>
+                            <a class="dropdown-item" href="/mensbasketball">Men's Basketball</a>
+                            <a class="dropdown-item" href="/mensbaseball">Men's Baseball</a>
+                            <a class="dropdown-item" href="/mensvolleyball">Men's Volleyball</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/newathlete">New Athletes</a>
+                    </li>
+                </ul>
+                <li class="nav-link">
+                    <a class="nav-link" href="/createnewprofile">Create a New Profile</a>
+                </li>
+                <li class="nav-link">
+                    <a class="nav-link" href="/myprofile">My Profile</a>
+                </li>
+                <li class="nav-link">
+                    <a class="nav-link" href="/login">Login</a>
+                </li>
+            </div>
+        </nav>
+    </div>
+    <div class="container-fluid">
+        <form class = "updateAthlete">
+            <div class="form-inline">
+                <div class="form-group">
+                    <label for="athleteEmail">Email Address:</label>
+                    <input type="email" class="form-control" id="athleteEmail" aria-describedby="emailHelp"
+                        placeholder="Enter email" style="margin-top: 2%">
+                </div>
+            </div>
+            <div class="form-inline">
+                <div class="form-group">
+                    <label for="athletePassword">Password:</label>
+                    <input type="password" class="form-control" id="athletePassword" placeholder="Password"
+                        style="margin-top: 2%">
+                </div>
+            </div>
+            <div class="form-inline">
+                <div class="form-group">
+                    <label for="athletePasswordTwo">Re-Type Password:</label>
+                    <input type="password" class="form-control" id="athletePasswordTwo" placeholder="Password"
+                        style="margin-top: 2%">
+                </div>
+            </div>
+            <div class="form-inline">
+                <div class="form-group">
+                    <label for="athleteName">Name:</label>
+                    <input type="text" class="form-control" id="athleteName" placeholder="Name" style="margin-top: 2%">
+                </div>
+            </div>
+            <div class="form-inline">
+                <div class="form-group">
+                    <label for="athletePosition">Position:</label>
+                    <input type="text" class="form-control" id="athletePosition" placeholder="Position" style="margin-top: 2%">
+                </div>
+            </div>
+            <div class="form-inline">
+                <div class="form-group">
+                    <label for="athleteAge">Age:</label>
+                    <input type="number" class="form-control" id="athleteAge" placeholder="Age" style="margin-top: 2%">
+                </div>
+            </div>
+            <div class="form-inline">
+                <div class="form-group">
+                    <label for="athleteHeightFeet athleteHeightInches"">Height:</label>
+                    <input type=" number" class="form-control" id="athleteHeightFeet" placeholder="Feet"
+                        style="margin-top: 2%"> ft.
+                        <input type="number" class="form-control" id="athleteHeightInches" placeholder="Inches"
+                            style="margin-top: 2%" style="margin-left: 5px"> in.
+                </div>
+            </div>
+            <div class="form-inline">
+                <div class="form-group">
+                    <label for="athleteWeight">Weight:</label>
+                    <input type="number" class="form-control" id="athleteWeight" placeholder="Weight" style="margin-top: 2%">
+                    lbs.
+                </div>
+            </div>
+            <div class="form-inline">
+                <div class="form-group">
+                    <label for="athleteHighSchool">High School:</label>
+                    <input type="text" class="form-control" id="athleteHighSchool" placeholder="High School"
+                        style="margin-top: 2%">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="athleteAboutMe">About Me:</label>
+                <textarea class="form-control" id="athleteAboutMe" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="athletePlayingLink">Link to a Video of You Playing Your Sport:</label>
+                <input type="text" class="form-control" id="athletePlayingLink" placeholder="Link">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button class="btn btn-primary"><a href="/myprofile">Back to Profile</a></button>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -43,6 +43,31 @@ module.exports = function (app) {
       })
   })
 
+  app.put("/api/athlete/update", function (req, res){
+    console.log(req.body)
+    console.log("hello")
+    db.Athletes.update({
+      email: req.body.email,
+      password: req.body.password,
+      position: req.body.postion,
+      age: req.body.age,
+      height_feet: req.body.height_feet,
+      height_inches: req.body.height_inches,
+      weight: req.body.weight,
+      high_school: req.body.high_school,
+      about_me: req.body.about_me,
+      video_or_picture: req.body.video_or_picture
+    },
+    {
+      where: {
+        name: req.body.name
+      }
+    }).then(function (data){
+      console.log("updated information complete")
+      res.json(data)
+    })
+  })
+
 
   app.post("/api/athlete", function (req, res) {
     db.Athletes.create(req.body).then(function (dbAthletes) {

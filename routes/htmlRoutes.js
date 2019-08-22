@@ -30,6 +30,10 @@ module.exports = function(app) {
   app.get("/mensvolleyball", function(req, res) {
     res.sendFile(path.join(__dirname, "../client/public/mensVolleyball.html"));
   });
+
+  app.get("/updateathleteprofile", function(req, res) {
+    res.sendFile(path.join(__dirname, "../client/public/updateAthlete.html"));
+  });
   // app.use(function(req, res){
   //   res.sendFile(path.join(__dirname, "../client/build/index.html")); 
   // })
